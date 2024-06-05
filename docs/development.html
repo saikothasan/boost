@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development - Boost Theme</title>
+  <meta name="description" content="Learn how to customize this theme using the tools included.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,400&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/css/icons.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-coy.min.css">
+  <!-- JS -->
+  <script src="../assets/js/bootstrap.js" defer></script>
+</head>
+
+<body>
+<header>
+  <a href="development.html#main" class="visually-hidden-focusable">Skip to main content</a>
+  <nav class="navbar navbar-expand-lg py-3" aria-label="Main">
+    <div class="container">
+      <a class='navbar-brand' href='../index.html'>
+        <img src="../assets/img/logo-boost.svg" alt="Boost Theme">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav my-3 my-lg-0 ms-auto">
+          <a class='nav-link px-lg-3' href='../pages.html'>Pages</a>
+          <a class='nav-link px-lg-3' href='../style.html'>Style</a>
+          <a class='nav-link px-lg-3 active' href='intro.html'>Docs</a>
+        </div>
+        <a class="btn btn-primary btn-sm rounded-pill ms-lg-3" href="https://themes.getbootstrap.com/product/boost/">Buy now</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5">
+<div class="row">
+<div class="col-lg-9 col-xxl-8 order-lg-1">
+<main id="main" class="mb-5">
+<h1>Development</h1>
+<div class="divider"></div>
+<p class="lead">Learn how to customize this theme using the tools included.</p>
+
+<p>To set up the theme, you need:</p>
+
+<ul>
+  <li>A command-line tool.</li>
+  <li><a href="https://nodejs.org/en/" class="link-underline" target="_blank" rel="noopener">Node.js</a> (includes npm).</li>
+</ul>
+
+<p>Open your terminal, ensure you are in the same directory of the unzipped theme, and run the following command to install all dependencies:</p>
+
+<figure class="bg-black text-white rounded-2 mb-4 p-3">
+  <pre class="mb-0"><code>npm i</code></pre>
+</figure>
+
+<p>In the terminal, run the following command:</p>
+
+<figure class="bg-black text-white rounded-2 mb-4 p-3">
+  <pre class="mb-0"><code>npm start</code></pre>
+</figure>
+
+<p>It compiles the source files, generates the site and starts a local server at <code>localhost:8080</code>.</p>
+
+<h2>Front matter</h2>
+
+<p>The theme uses <a href="https://www.11ty.dev/" target="_blank" rel="noopener">Eleventy</a> static site generator.</p>
+
+<p>You can add metadata in your page templates:</p>
+
+<pre class="language-html"><code class="language-html">---
+layout: base
+title: Home
+description: Boost is a clean and accessible theme for Bootstrap.
+permalink: /
+---</code></pre>
+
+<ul>
+  <li><strong>Layout:</strong> the template used to wrap the content.</li>
+  <li><strong>Title:</strong> page title.</li>
+  <li><strong>Description:</strong> page meta description.</li>
+  <li><strong>Permalink:</strong> allows remapping your template's URI.</li>
+</ul>
+
+<h2>Images</h2>
+<p>Eleventy only copies the images from the src folder to the dist folder. To get faster load times, use the right image size and compress them using an app like <a href="https://squoosh.app/" target="_blank" rel="noopener">Squoosh</a> (Web app) or <a href="https://imageoptim.com/mac" target="_blank" rel="noopener">ImageOptim</a> (Mac app).</p>
+
+<h2>Production</h2>
+<p>Once your site is ready to publish, run the following command:</p>
+
+<figure class="bg-black text-white rounded-2 mb-4 p-3">
+  <pre class="mb-0"><code>npm run build</code></pre>
+</figure>
+
+<p>It generates the site from scratch and removes unused CSS.</p>
+</main>
+</div>
+<div class="col-lg-3">
+  <nav class="side-nav sticky-top mt-1" aria-label="Docs">
+    <dl>
+      <dt class="text-uppercase mb-2">Getting Started</dt>
+      <dd>
+        <a href='intro.html'>Introduction</a>
+      </dd>
+      <dd>
+        <a href='accessibility.html'>Accessibility</a>
+      </dd>
+      <dd>
+        <a href='customization.html'>Customization</a>
+      </dd>
+      <dd>
+        <a class='active' href='development.html'>Development</a>
+      </dd>
+      <dd>
+        <a href='updating.html'>Updating</a>
+      </dd>
+      <dd>
+        <a href='changelog.html'>Changelog</a>
+      </dd>
+      <dt class="text-uppercase mt-4 mb-2">Components</dt>
+      <dd>
+        <a href='accordion.html'>Accordion</a>
+      </dd>
+      <dd>
+        <a href='alerts.html'>Alerts</a>
+      </dd>
+      <dd>
+        <a href='avatars.html'>Avatars</a>
+      </dd>
+      <dd>
+        <a href='backgrounds.html'>Backgrounds</a>
+      </dd>
+      <dd>
+        <a href='buttons.html'>Buttons</a>
+      </dd>
+      <dd>
+        <a href='cards.html'>Cards</a>
+      </dd>
+      <dd>
+        <a href='devices.html'>Devices</a>
+      </dd>
+      <dd>
+        <a href='dropdowns.html'>Dropdowns</a>
+      </dd>
+      <dd>
+        <a href='forms.html'>Forms</a>
+      </dd>
+      <dd>
+        <a href='icons.html'>Icons</a>
+      </dd>
+      <dd>
+        <a href='modal.html'>Modal</a>
+      </dd>
+      <dd>
+        <a href='navbar.html'>Navbar</a>
+      </dd>
+      <dd>
+        <a href='pagination.html'>Pagination</a>
+      </dd>
+      <dd>
+        <a href='tables.html'>Tables</a>
+      </dd>
+    </dl>
+  </nav>
+</div>
+</div>
+</div>
+</body>
+</html>

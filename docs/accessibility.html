@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility - Boost Theme</title>
+  <meta name="description" content="Boost theme is built with accessibility in mind.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,400&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/css/icons.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-coy.min.css">
+  <!-- JS -->
+  <script src="../assets/js/bootstrap.js" defer></script>
+</head>
+
+<body>
+<header>
+  <a href="accessibility.html#main" class="visually-hidden-focusable">Skip to main content</a>
+  <nav class="navbar navbar-expand-lg py-3" aria-label="Main">
+    <div class="container">
+      <a class='navbar-brand' href='../index.html'>
+        <img src="../assets/img/logo-boost.svg" alt="Boost Theme">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav my-3 my-lg-0 ms-auto">
+          <a class='nav-link px-lg-3' href='../pages.html'>Pages</a>
+          <a class='nav-link px-lg-3' href='../style.html'>Style</a>
+          <a class='nav-link px-lg-3 active' href='intro.html'>Docs</a>
+        </div>
+        <a class="btn btn-primary btn-sm rounded-pill ms-lg-3" href="https://themes.getbootstrap.com/product/boost/">Buy now</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5">
+<div class="row">
+<div class="col-lg-9 col-xxl-8 order-lg-1">
+<main id="main" class="mb-5">
+<h1>Accessibility</h1>
+<div class="divider"></div>
+<p class="lead">Boost theme is built with accessibility in mind.</p>
+
+<ul>
+  <li><strong>ARIA:</strong>
+    <ul>
+      <li>Non-interactive elements, such as decorative icons, have an aria-hidden attribute.</li>
+      <li>Interactive controls have appropriate ARIA roles.</li>
+      <li>ARIA IDs are unique.</li>
+    </ul>
+  </li>
+  <li><strong>Color contrast:</strong> contrast ratio between text and background is within the AA level (4.5:1).</li>
+  <li><strong>Links:</strong> links are underlined by default, except when they’re part of specific components.</li>
+  <li><strong>Headings structure</strong>
+    <ul>
+      <li>All sections have a heading element (sometimes visually hidden).</li>
+      <li>Headings do not skip levels when descending.</li>
+    </ul>
+  </li>
+  <li><strong>Images:</strong> all images have <code>alt</code> attributes.</li>
+  <li><strong>Forms: </strong> Forms have field labels associated with the form controls.</li>
+  <li><strong>Keyboard navigation</strong>
+    <ul>
+      <li>Pages include a 'Skip to main content' link at the beginning.</li>
+      <li>Interactive controls are keyboard focusable.</li>
+      <li>Pages have a logical tab order.</li>
+    </ul>
+  </li>
+  <li><strong>Landmarks:</strong> HTML5 landmark elements are used to improve navigation (<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, etc.)</li>
+  <li><strong>Language:</strong> <code>&lt;html&gt;</code> element has a <code>&lt;lang&gt;</code> attribute.</li>
+  <li><strong>Valid W3C code:</strong> The code is fully compliant with the standards set by the World Wide Web Consortium.</li>
+</ul>
+</main>
+</div>
+<div class="col-lg-3">
+  <nav class="side-nav sticky-top mt-1" aria-label="Docs">
+    <dl>
+      <dt class="text-uppercase mb-2">Getting Started</dt>
+      <dd>
+        <a href='intro.html'>Introduction</a>
+      </dd>
+      <dd>
+        <a class='active' href='accessibility.html'>Accessibility</a>
+      </dd>
+      <dd>
+        <a href='customization.html'>Customization</a>
+      </dd>
+      <dd>
+        <a href='development.html'>Development</a>
+      </dd>
+      <dd>
+        <a href='updating.html'>Updating</a>
+      </dd>
+      <dd>
+        <a href='changelog.html'>Changelog</a>
+      </dd>
+      <dt class="text-uppercase mt-4 mb-2">Components</dt>
+      <dd>
+        <a href='accordion.html'>Accordion</a>
+      </dd>
+      <dd>
+        <a href='alerts.html'>Alerts</a>
+      </dd>
+      <dd>
+        <a href='avatars.html'>Avatars</a>
+      </dd>
+      <dd>
+        <a href='backgrounds.html'>Backgrounds</a>
+      </dd>
+      <dd>
+        <a href='buttons.html'>Buttons</a>
+      </dd>
+      <dd>
+        <a href='cards.html'>Cards</a>
+      </dd>
+      <dd>
+        <a href='devices.html'>Devices</a>
+      </dd>
+      <dd>
+        <a href='dropdowns.html'>Dropdowns</a>
+      </dd>
+      <dd>
+        <a href='forms.html'>Forms</a>
+      </dd>
+      <dd>
+        <a href='icons.html'>Icons</a>
+      </dd>
+      <dd>
+        <a href='modal.html'>Modal</a>
+      </dd>
+      <dd>
+        <a href='navbar.html'>Navbar</a>
+      </dd>
+      <dd>
+        <a href='pagination.html'>Pagination</a>
+      </dd>
+      <dd>
+        <a href='tables.html'>Tables</a>
+      </dd>
+    </dl>
+  </nav>
+</div>
+</div>
+</div>
+</body>
+</html>
